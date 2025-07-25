@@ -1,0 +1,16 @@
+site_name: Curren Dynamics Wiki
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: lime
+  font:
+    text: Roboto
+    code: Roboto Mono
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Hardware Overview: hardware.md
+  - Firmware Guide: firmware.md
+
