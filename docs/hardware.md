@@ -4,7 +4,7 @@
 
 ---
 
-## 🧠 Microcontroller
+## Microcontroller
 
 ### ATmega328P-PN
 - 8-bit AVR MCU running at 16 MHz
@@ -15,7 +15,7 @@
 
 ---
 
-## ⚡ Power Regulation
+## Power Regulation
 
 ### MAX17502FATB+T
 - High-efficiency, synchronous step-down converter
@@ -28,7 +28,7 @@
 
 ---
 
-## 🔌 USB-UART Interface
+## USB-UART Interface
 
 ### CP2102-GMR
 - USB to UART bridge
@@ -40,7 +40,7 @@
 
 ---
 
-## 🔧 Motor Drivers
+## Motor Drivers
 
 ### DRV8245HQPWPRQ1 ×2
 Two independent H-bridge motor drivers (one per motor):
@@ -57,7 +57,7 @@ Two independent H-bridge motor drivers (one per motor):
 
 ---
 
-## 🔋 Power & Connectors
+## Power & Connectors
 
 - **Power input range (VIN):** 4.5V – 35V
 - **Input capacitors:** 390μF bulk + 100nF ceramic decoupling
@@ -68,14 +68,14 @@ Two independent H-bridge motor drivers (one per motor):
 
 ---
 
-## 📟 Indicators
+## Indicators
 
 - Power LED (Green)
 - TX/RX LEDs (White) for USB serial activity
 
 ---
 
-## 🧩 GPIO & Expansion
+## GPIO & Expansion
 
 Exposed I/O on 2.54mm headers:
 
@@ -88,7 +88,7 @@ Exposed I/O on 2.54mm headers:
 
 ---
 
-## ⚠️ Protections
+## Protections
 
 - **TVS Diode (D3):** SMAJ36A for transient voltage suppression on VIN
 - **Input filtering:** Several MLCCs and RC snubbers
@@ -96,13 +96,13 @@ Exposed I/O on 2.54mm headers:
 
 ---
 
-## 📐 Crystal
+## Clock Signal
 
 - **X1:** 16 MHz crystal for ATmega328P with 22pF load capacitors
 
 ---
 
-## 📎 BOM Summary (Core ICs)
+## Core Components Summary
 
 | Ref | Part                         | Function                    |
 |-----|------------------------------|-----------------------------|
@@ -111,14 +111,6 @@ Exposed I/O on 2.54mm headers:
 | U5  | CP2102-GMR                   | USB-UART Bridge             |
 | U10 | DRV8245HQPWPRQ1              | Motor Driver A              |
 | U11 | DRV8245HQPWPRQ1              | Motor Driver B              |
-
----
-
-## 🛠 Notes for Designers
-
-- **Grounding:** PGND and logic GND are clearly separated; star grounding is recommended at the power input.
-- **VIN filtering:** Bulk and high-frequency caps present, but layout should be reviewed for thermal/via optimization.
-- **Modularity:** Can serve as both an ESC and a general-purpose Arduino-compatible controller with motor drivers.
 
 ---
 

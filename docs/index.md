@@ -7,14 +7,15 @@ We design everything from programmable motor controllers to Arduino-compatible d
 ---
 
 ## 🚀 Featured Project  
-### 🔧 ESCuino – Dual Brushed Motor ESC with Arduino Support  
+### ESCuino – Dual Brushed Motor ESC built for Arduino IDE 
+<img src="./assets/images/v1-render.png" alt="Render of ESCuino X2 Dev V1.0" class="render-img">
 An open-source, user-programmable motor controller built for R/C vehicles, robotics, and more.
 
 ---
 
 ## 🧰 Start Here
 
-- [Projects](projects.md)
+- [Overview](ESCuino_X2.md)
 - [Hardware Docs](hardware.md)
 - [Firmware & Code](firmware.md)
 - [Contribute](contribute.md)
