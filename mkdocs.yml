@@ -1,16 +1,71 @@
-site_name: Curren Dynamics Wiki
+site_name: Wiki
+site_url: https://curren-dynamics.github.io/wiki/
+site_author: Hayden Curren
+repo_url: https://github.com/curren-dynamics/wiki
+repo_name: Curren Dynamics on GitHub
+edit_uri: edit/main/docs/
+
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/logo_only.png
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+
   palette:
-    scheme: slate
-    primary: deep purple
-    accent: lime
-  font:
-    text: Roboto
-    code: Roboto Mono
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+
+  icon:
+    repo: fontawesome/brands/github
+
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
-  - Hardware Overview: hardware.md
-  - Firmware Guide: firmware.md
+  - Projects: 
+    - Overview: projects.md
+    - ESCuino X2:
+      - Overview: ESCuino_X2.md
+      - Development: development.md
+      - Hardware: hardware.md
 
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.inlinehilite
+
+plugins:
+  - search
+
+extra_css:
+  - styles/extra.css

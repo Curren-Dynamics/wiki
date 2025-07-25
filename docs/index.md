@@ -1,17 +1,24 @@
-# Welcome to MkDocs
+# Welcome to Curren Dynamics
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Curren Dynamics is a hardware design studio building open-source electronics for makers, engineers, and R/C hobbyists. Our focus is on accessible, high-performance tools that blend prototyping flexibility with real-world durability.
 
-## Commands
+We design everything from programmable motor controllers to Arduino-compatible development boards, with an emphasis on customization, clarity, and community collaboration.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
+## 🚀 Featured Project  
+### 🔧 ESCuino – Dual Brushed Motor ESC with Arduino Support  
+An open-source, user-programmable motor controller built for R/C vehicles, robotics, and more.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+---
+
+## 🧰 Start Here
+
+- [Projects](projects.md)
+- [Hardware Docs](hardware.md)
+- [Firmware & Code](firmware.md)
+- [Contribute](contribute.md)
+
+---
+
+Built in the Ozarks. Open to the world.
