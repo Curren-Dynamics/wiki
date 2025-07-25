@@ -114,4 +114,4 @@ Exposed I/O on 2.54mm headers:
 
 ---
 
-Built in the Ozarks. Open to the world.
+Designed in the Ozarks, USA. Built for the Frontier. 

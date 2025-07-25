@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  logo: assets/logos/logo.png
+  logo: assets/logos/logo.svg
   favicon: assets/logos/logo_only.png
   features:
     - navigation.instant

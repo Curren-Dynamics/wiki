@@ -22,4 +22,4 @@ An open-source, user-programmable motor controller built for R/C vehicles, robot
 
 ---
 
-Built in the Ozarks. Open to the world.
+Designed in the Ozarks, USA. Built for the Frontier. 

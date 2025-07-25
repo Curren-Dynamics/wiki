@@ -34,4 +34,4 @@ Whether you're prototyping a robotics project, customizing your next R/C boat, o
 Have feedback or want to get involved? Join the community or contribute on GitHub.
 
 
-Curren Dynamics is dedicated to building approachable, high-quality electronics in the heart of the Ozarks, USA.
+Designed in the Ozarks, USA. Built for the Frontier. 
