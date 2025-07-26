@@ -42,12 +42,10 @@ theme:
 
 nav:
   - Home: index.md
-  - Projects: 
-    - Overview: projects.md
-    - ESCuino X2:
-      - Overview: ESCuino_X2.md
-      - Development: development.md
-      - Hardware: hardware.md
+  - ESCuino X2:
+    - Overview: ESCuino_X2.md
+    - Hardware: hardware.md
+    - Development: development.md
 
 markdown_extensions:
   - admonition
