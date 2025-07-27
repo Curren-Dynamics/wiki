@@ -477,6 +477,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#motor-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Drivers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motor Drivers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drv8245hqpwprq1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      DRV8245HQPWPRQ1 ×2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-regulation" class="md-nav__link">
     <span class="md-ellipsis">
       Power Regulation
@@ -514,30 +538,6 @@
   <a href="#cp2102-gmr" class="md-nav__link">
     <span class="md-ellipsis">
       CP2102-GMR
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#motor-drivers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Motor Drivers
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Motor Drivers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#drv8245hqpwprq1-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      DRV8245HQPWPRQ1 ×2
     </span>
   </a>
   
@@ -692,6 +692,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#motor-drivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Drivers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motor Drivers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drv8245hqpwprq1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      DRV8245HQPWPRQ1 ×2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-regulation" class="md-nav__link">
     <span class="md-ellipsis">
       Power Regulation
@@ -729,30 +753,6 @@
   <a href="#cp2102-gmr" class="md-nav__link">
     <span class="md-ellipsis">
       CP2102-GMR
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#motor-drivers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Motor Drivers
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Motor Drivers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#drv8245hqpwprq1-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      DRV8245HQPWPRQ1 ×2
     </span>
   </a>
   
@@ -849,6 +849,20 @@
 <li>Exposes UART, SPI, I²C, PWM, and ADC pins on 0.1" headers</li>
 </ul>
 <hr />
+<h2 id="motor-drivers">Motor Drivers<a class="headerlink" href="#motor-drivers" title="Permanent link">&para;</a></h2>
+<h3 id="drv8245hqpwprq1-2">DRV8245HQPWPRQ1 ×2<a class="headerlink" href="#drv8245hqpwprq1-2" title="Permanent link">&para;</a></h3>
+<p>Two independent H-bridge motor drivers (one per motor):</p>
+<ul>
+<li>Supply voltage (VM): 4.5V – 37V</li>
+<li>Max continuous output current: <strong>6.5A RMS</strong></li>
+<li>Peak output current: up to 10–14A (depending on cooling and duty cycle)</li>
+<li>Integrated power FETs (no external FETs needed)</li>
+<li>Control: PH/EN or PWM/PWM modes</li>
+<li>Current sensing via IPROPI pin (proportional to output current)</li>
+<li>Built-in protections: overcurrent, undervoltage, thermal shutdown, short-circuit</li>
+</ul>
+<p><strong>Note:</strong> Each motor channel can safely sustain ~6.5A continuous with proper PCB heat dissipation. Higher peak currents are possible for brief durations.</p>
+<hr />
 <h2 id="power-regulation">Power Regulation<a class="headerlink" href="#power-regulation" title="Permanent link">&para;</a></h2>
 <h3 id="max17502fatbt">MAX17502FATB+T<a class="headerlink" href="#max17502fatbt" title="Permanent link">&para;</a></h3>
 <ul>
@@ -870,28 +884,14 @@
 </ul>
 <p><strong>Connector:</strong> USB-C (HYCW445-USBC16-730B)</p>
 <hr />
-<h2 id="motor-drivers">Motor Drivers<a class="headerlink" href="#motor-drivers" title="Permanent link">&para;</a></h2>
-<h3 id="drv8245hqpwprq1-2">DRV8245HQPWPRQ1 ×2<a class="headerlink" href="#drv8245hqpwprq1-2" title="Permanent link">&para;</a></h3>
-<p>Two independent H-bridge motor drivers (one per motor):</p>
-<ul>
-<li>Supply voltage (VM): 4.5V – 37V</li>
-<li>Max continuous output current: <strong>6.5A RMS</strong></li>
-<li>Peak output current: up to 10–14A (depending on cooling and duty cycle)</li>
-<li>Integrated power FETs (no external FETs needed)</li>
-<li>Control: PH/EN or PWM/PWM modes</li>
-<li>Current sensing via IPROPI pin (proportional to output current)</li>
-<li>Built-in protections: overcurrent, undervoltage, thermal shutdown, short-circuit</li>
-</ul>
-<p><strong>Note:</strong> Each motor channel can safely sustain ~6.5A continuous with proper PCB heat dissipation. Higher peak currents are possible for brief durations.</p>
-<hr />
 <h2 id="power-connectors">Power &amp; Connectors<a class="headerlink" href="#power-connectors" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Power input range (VIN):</strong> 4.5V – 35V</li>
 <li><strong>Input capacitors:</strong> 390μF bulk + 100nF ceramic decoupling</li>
 <li><strong>Connectors:</strong>  </li>
-<li>VM and GND via PM254V screw terminals  </li>
-<li>Motor A and Motor B outputs via separate headers  </li>
-<li>USB-C for power and UART</li>
+<li>4.5V - 35V DC input via solder pads  </li>
+<li>Motor A and Motor B outputs via solder pads  </li>
+<li>USB-C for logic power and UART (cannot drive motors on USB-C Power)</li>
 </ul>
 <hr />
 <h2 id="indicators">Indicators<a class="headerlink" href="#indicators" title="Permanent link">&para;</a></h2>
@@ -945,36 +945,26 @@
 <table>
 <thead>
 <tr>
-<th>Ref</th>
 <th>Part</th>
 <th>Function</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>U9</td>
 <td>ATmega328P-PN</td>
 <td>MCU</td>
 </tr>
 <tr>
-<td>U3</td>
+<td>DRV8245HQPWPRQ1</td>
+<td>Motor Drivers</td>
+</tr>
+<tr>
 <td>MAX17502FATB+T</td>
 <td>5V Buck Regulator</td>
 </tr>
 <tr>
-<td>U5</td>
 <td>CP2102-GMR</td>
 <td>USB-UART Bridge</td>
-</tr>
-<tr>
-<td>U10</td>
-<td>DRV8245HQPWPRQ1</td>
-<td>Motor Driver A</td>
-</tr>
-<tr>
-<td>U11</td>
-<td>DRV8245HQPWPRQ1</td>
-<td>Motor Driver B</td>
 </tr>
 </tbody>
 </table>
