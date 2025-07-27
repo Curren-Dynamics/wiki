@@ -15,6 +15,23 @@
 
 ---
 
+## Motor Drivers
+
+### DRV8245HQPWPRQ1 ×2
+Two independent H-bridge motor drivers (one per motor):
+
+- Supply voltage (VM): 4.5V – 37V
+- Max continuous output current: **6.5A RMS**
+- Peak output current: up to 10–14A (depending on cooling and duty cycle)
+- Integrated power FETs (no external FETs needed)
+- Control: PH/EN or PWM/PWM modes
+- Current sensing via IPROPI pin (proportional to output current)
+- Built-in protections: overcurrent, undervoltage, thermal shutdown, short-circuit
+
+**Note:** Each motor channel can safely sustain ~6.5A continuous with proper PCB heat dissipation. Higher peak currents are possible for brief durations.
+
+---
+
 ## Power Regulation
 
 ### MAX17502FATB+T
@@ -40,31 +57,14 @@
 
 ---
 
-## Motor Drivers
-
-### DRV8245HQPWPRQ1 ×2
-Two independent H-bridge motor drivers (one per motor):
-
-- Supply voltage (VM): 4.5V – 37V
-- Max continuous output current: **6.5A RMS**
-- Peak output current: up to 10–14A (depending on cooling and duty cycle)
-- Integrated power FETs (no external FETs needed)
-- Control: PH/EN or PWM/PWM modes
-- Current sensing via IPROPI pin (proportional to output current)
-- Built-in protections: overcurrent, undervoltage, thermal shutdown, short-circuit
-
-**Note:** Each motor channel can safely sustain ~6.5A continuous with proper PCB heat dissipation. Higher peak currents are possible for brief durations.
-
----
-
 ## Power & Connectors
 
 - **Power input range (VIN):** 4.5V – 35V
 - **Input capacitors:** 390μF bulk + 100nF ceramic decoupling
 - **Connectors:**  
-  - VM and GND via PM254V screw terminals  
-  - Motor A and Motor B outputs via separate headers  
-  - USB-C for power and UART
+  - 4.5V - 35V DC input via solder pads  
+  - Motor A and Motor B outputs via solder pads  
+  - USB-C for logic power and UART (cannot drive motors on USB-C Power)
 
 ---
 
@@ -104,13 +104,12 @@ Exposed I/O on 2.54mm headers:
 
 ## Core Components Summary
 
-| Ref | Part                         | Function                    |
-|-----|------------------------------|-----------------------------|
-| U9  | ATmega328P-PN                | MCU                         |
-| U3  | MAX17502FATB+T               | 5V Buck Regulator           |
-| U5  | CP2102-GMR                   | USB-UART Bridge             |
-| U10 | DRV8245HQPWPRQ1              | Motor Driver A              |
-| U11 | DRV8245HQPWPRQ1              | Motor Driver B              |
+| Part                         | Function                    |
+|------------------------------|-----------------------------|
+| ATmega328P-PN                | MCU                         |
+| DRV8245HQPWPRQ1              | Motor Drivers               |
+| MAX17502FATB+T               | 5V Buck Regulator           |
+| CP2102-GMR                   | USB-UART Bridge             |
 
 ---
 
