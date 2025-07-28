@@ -7,7 +7,7 @@ Primary Features
 - 2-in-1 ESC with independent bi-directional control of 2 brushed motors
 - Controllable with a minimum of 2 PWM inputs from a radio receiver
 - 2s - 3s voltage and 30a - 60a per motor
-- USB-C codeability via Arduino IDE
+- Programmable via Arduino IDE over USB-C
 - Extra I/O accessible for expandability
 - Sale price under $40
 
