@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#intro" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -426,6 +431,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Development
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -437,6 +455,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Over
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-production-revisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-production revisions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -468,6 +539,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Over
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-production-revisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-production revisions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -487,7 +602,61 @@
 
   <h1>Development</h1>
 
-
+<h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h2>
+<p>When setting out to design the ESCuino X2, I wanted to create a 2-in-1 ESC that provided a few extra features for use in some of my 3d printable R/C vehicle designs. It is not strictly an ESC- definitely not a flight controller, but something in between. My main goals for this project were as follows;</p>
+<p>Primary Features</p>
+<ul>
+<li>2-in-1 ESC with independent bi-directional control of 2 brushed motors</li>
+<li>Controllable with a minimum of 2 PWM inputs from a radio receiver</li>
+<li>2s - 3s voltage and 30a - 60a per motor</li>
+<li>USB-C codeability via Arduino IDE</li>
+<li>Extra I/O accessible for expandability</li>
+<li>Sale price under $40</li>
+</ul>
+<p>Secondary Features</p>
+<ul>
+<li>Waterproof</li>
+<li>Current sensing at the MCU level</li>
+<li>Temperature sensing at the MCU level</li>
+<li>Serial / CAN output for radio telemetry</li>
+<li>Serial / CAN control input</li>
+</ul>
+<hr />
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>I think starting from 0 is always the most challenging part. Deciding on what components to use took around a week of reading through countless datasheets and comparing specifications and requirements before I settled on how to drive the motors. I ended up settling on the Texas Instruments DRV8263-Q1, a new IC from TI that incorporates a full H-bridge, current sensing, temperature sensing circuitry, and impressive specifications for the package size. The data sheet boasts an input voltage range of 4.5V - 65V and up to 29A continuous current. Of course, capitalizing on this would require ample thermal dissipation. I had yet to learn just how much thermal dissipation that would require, and what would actually be possible - more on that later. For now though I thought these little ICs were just too cool to not to use them.</p>
+<p>After I'd decided on how to drive the motors, I started trying to decide on the MCU for the project. I considered several options, including SiLabs Busy Bee series and even a few STM32 models, which have libraries for support in the Arduino IDE. However, using them in this method wouldn't be as feature-rich as their native development platforms. Ultimately, I decided that coding it with the Arduino IDE should mean that it is more than just compatible; it should also be familiar to users with Arduino experience. With that in mind, I decided on the ATmega328P, a processor more than powerful enough for the brushed motors I planned on driving and the features I want to implement. This is also when I decided on creating the board first as a development platform with IO breakout headers that with the saming naming scheme as the UNO R3 -- building the board this way means we should be able to flash the board with an UNO R3 bootloader and essentially treat it the same way we would a standard UNO R3, just with a bit more power. </p>
+<p>After that, it was just a matter of picking a voltage regulator that wouldn't severely bottleneck the input range supported by the motor drivers, a good USB to serial interface, and it's off to the races. By races, I mean another week of drawing up schematics and trace routing. It was somewhere around the time I was finishing trace routing that I realized Chat-GPT could perform a half-decent design review! This helped catch a few little things I had missed, like ESD protection on the USB data lines and voltage regulator input. It's not a perfect system for design review, but it's better than nothing! </p>
+<h2 id="starting-over">Starting Over<a class="headerlink" href="#starting-over" title="Permanent link">&para;</a></h2>
+<p>Finally, it was time to get some PCB manufacturing and assembly quotes and determine if those ChatGPT design reviews were right about this thing working. I thought we were just going to upload some files, click pay, and have a board 7 days later, like all those YouTube ads suggested, but this is where things started getting frustrating. You might have read through my list of primary features above and thought, "Huh, 30-60A per motor is quite a bit more than the 6.5A max RMS listed on the hardware page", and you'd be right. Turns out I had a lot to learn about designing for manufacturing capabilities and parts availability. The DRV8263 I had specified in my designs was too new to be in stock with any major parts distributors; at best, I could find a development board from TI with the chip soldered to it for $180. So I started looking for suitable replacements and found the DRV8245! This chip was a pin-for-pin replacement with similar specs on the datasheet! It supports a lower Vin range of 4.5V to 35V but a peak current of 32A! This was the best suitable replacement I could find, and I replaced all references to the 8263 in my schematics and BOM with the readily available 8245 variant.
+I still had a bit to learn, however. While doing a bit more late-night research, I found a forum post on e2e.ti.com where a user was asking about the current capabilities of this chip. A TI engineer referred to a thermal dissipation calculator tool they supplied for the chip that calculated predicted temperatures based on a few assumptions about your PCB design. These seem to indicate a temperature of 135 °C after about 10 seconds at 8A, and that 6.5A would be a safer sustained current level. The assumptions the calculator is based on aren't 100% accurate to my design, though, and TI states the output skew towards the pessimistic side. Still, it wasn't anywhere near my primary feature parameters. </p>
+<p>Rather than scrap everything I had, I decided to accept a lower potential max current, get the thing built, and shoot for higher outputs in later iterations. Of course, a 30-60A continuous current per motor would be possible using a traditional external FET H-Bridge per motor. Still, the required space would mean a complete clean-sheet redesign, and either a much larger form factor or dual-sided component assembly -- neither of which appealed to me. In reality, to drive the 380 motors, I plan to use this: 6.5A will likely be plenty; it just won't provide the overhead for dual 540 motor control in a bigger project I'm working on, or sound as impressive on paper. All that being said, there is still some hope for this platform! The 6.5A prediction is based on a two-layer PCB and no additional component cooling. It <em>IS</em> possible for the internal circuitry of these boards to handle 32A with perfect thermal dissipation. While "perfect" likely isn't possible, this board is a 4-layer PCB with large copper pours to dissipate heat. With additional thermal modifiers like heatsinks or active cooling, we could see significantly higher continuous current capabilities than the 6.5A predictions from TI. Once the board is in hand, I plan to do a significant amount of testing to determine more accurate expectations for the board's current handling capabilities.</p>
+<hr />
+<h2 id="pre-production-revisions">Pre-production revisions<a class="headerlink" href="#pre-production-revisions" title="Permanent link">&para;</a></h2>
+<p>If you watch any maker-oriented YouTube videos, you've probably seen the ads for PCBway and JLCPCB that tell you how you could have your PCBs made in just a few days, starting at $2! That was sort of what I had in the back of my mind going into this - can you tell I'm new to this? It turns out those prices are for the simplest 2-layer boards you could dream of, which certainly doesn't include assembly. You could very plausibly create a few breakout boards for SMD components, or various hats or shields for Arduinos, assemble them yourself, and see prices very close to that advertised price point. However, that simply didn't turn out to be the case for this design.</p>
+<p>When you switch from a 2-Layer PCB to a 4-Layer PCB, right off the bat the price jumps from $2 - $7, then when you switch from the standard 1-oz outer copper layers to 2oz copper, the price jumps up again to about $25, then when you switch from 1/2-oz internal copper layers to 2oz internal copper layers, it jumps again to $70. Unfortunately, the thickness of our copper layers is an essential variable in calculating the thermal dissipation capabilities of our board and the throughput potential for the components attached to it. Still, $70 to get five boards made isn't terrible. Adding assembly and the price of components is a bit of a hit, but some of the components on this board simply aren't cheap, and I knew that when I designed it. After adding the price of components and assembly, getting five boards manufactured would cost about $200- that was until shipping and tariffs were added. The cheapest shipping option from JLCPCB was $60, and since they don't have any US-based fulfillment facilities, tariffs will be applied to my order, bringing the total cost of 5 PCBs to a little under $400. Around $80 per board, all of which I imagined would be fried during stress testing experiments I had planned for them. Of course, the price per board comes down dramatically when they're ordered in larger quantities, and going up to an order size of even just 30 boards will allow me to sell them at the targeted price point. However, if I'm going to spend that much on the first order, I decided I'd better thoroughly review the choices I had made during trace-routing and ensure I wasn't overlooking something simple.</p>
+<p>Initially, for what I had labeled Dev V1.0, the renders currently on the website, I had planned to use short and wide traces with a high density of vias-in-pad to transfer the current and thermal loads of the motor driver to the underlying copper pours. I wasn't sure this would be the most efficient way of transferring either, and via-in-pad adds a bit of cost to manufacturing. I'd also learned more about the design software I was using and best practices since drawing it up, and decided to re-do it with some more significant copper-pours on the top layer, and add a few more vias for thermal and current transfer. So far, that's been the most important revision to what I'm now calling Dev V1.0.1, based on the following versioning scheme;</p>
+<table>
+<thead>
+<tr>
+<th>V</th>
+<th>1</th>
+<th>0</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Version</td>
+<td>Main Architecture Version</td>
+<td>Production Revisions</td>
+<td>Pre-Production Revisions</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>And for now, that's where we're at. I'm still trying to give Dev V1.0 every chance at succeeding on the first batch, poring over trace width current capacity calculations and researching everything I can think of to catch things I may have missed. DRC checks are good, Chat GPT says it will work, but I just want to be sure. I plan to order the first batch by the second week of August 2025, so I have about 3 weeks. I'll continue to update this page as I catch more of my mistakes. Thanks for reading!</p>
+<hr />
+<p>Designed in the Ozarks, Built for the Frontier.</p>
 
 
 
