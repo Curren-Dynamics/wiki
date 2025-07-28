@@ -26,7 +26,8 @@ Whether you're prototyping a robotics project, customizing your next R/C boat, o
 
 ##Get Started
 - [Hardware Documentation](hardware.md)
-- Development Notes
+- [Development Notes](development.md)
+- [Community Feedback](feedback.md)
 
 
 ###Contribute
