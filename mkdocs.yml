@@ -44,8 +44,10 @@ nav:
   - Home: index.md
   - ESCuino X2:
     - Overview: ESCuino_X2.md
-    - Hardware: hardware.md
-    - Development: development.md
+    - Hardware: x2_hardware.md
+    - Development: x2_development.md
+  - Mighty Mouse:
+    - Overview: mm_overview.md
 
 markdown_extensions:
   - admonition

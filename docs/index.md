@@ -16,9 +16,9 @@ An open-source, user-programmable motor controller built for R/C vehicles, robot
 ## 🧰 Start Here
 
 - [Overview](ESCuino_X2.md)
-- [Hardware Docs](hardware.md)
-- [Development](development.md)
-- [Community Feedback](feedback.md)
+- [Hardware Docs](x2_hardware.md)
+- [Development](x2_development.md)
+- [Community Feedback](x2_feedback.md)
 - [Contribute](https://github.com/orgs/Curren-Dynamics/repositories)
 
 ---

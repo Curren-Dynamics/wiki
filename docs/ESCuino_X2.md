@@ -25,9 +25,9 @@ Whether you're prototyping a robotics project, customizing your next R/C boat, o
 - Anyone who wants full control over how their ESC behaves
 
 ##Get Started
-- [Hardware Documentation](hardware.md)
-- [Development Notes](development.md)
-- [Community Feedback](feedback.md)
+- [Hardware Documentation](x2_hardware.md)
+- [Development Notes](x2_development.md)
+- [Community Feedback](x2_feedback.md)
 
 
 ###Contribute
