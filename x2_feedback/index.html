@@ -10,13 +10,9 @@
         <meta name="author" content="Hayden Curren">
       
       
-        <link rel="canonical" href="https://curren-dynamics.com/hardware/">
+        <link rel="canonical" href="https://curren-dynamics.com/x2_feedback/">
       
       
-        <link rel="prev" href="../ESCuino_X2/">
-      
-      
-        <link rel="next" href="../development/">
       
       
       <link rel="icon" href="../assets/logos/logo_only.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>Hardware - Wiki</title>
+        <title>X2 feedback - Wiki</title>
       
     
     
@@ -78,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#escuino-x2-hardware-overview" class="md-skip">
+        <a href="#community-feedback" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hardware
+              X2 feedback
             
           </span>
         </div>
@@ -241,17 +237,35 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../ESCuino_X2/" class="md-tabs__link">
           
   
   
   ESCuino X2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../mm_overview/" class="md-tabs__link">
+          
+  
+  
+  Mighty Mouse
 
         </a>
       </li>
@@ -329,31 +343,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -366,7 +375,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             ESCuino X2
@@ -400,32 +409,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Hardware
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../x2_hardware/" class="md-nav__link">
         
   
   
@@ -436,176 +423,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#microcontroller" class="md-nav__link">
-    <span class="md-ellipsis">
-      Microcontroller
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Microcontroller">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#atmega328p-pn" class="md-nav__link">
-    <span class="md-ellipsis">
-      ATmega328P-PN
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#motor-drivers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Motor Drivers
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Motor Drivers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#drv8245hqpwprq1-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      DRV8245HQPWPRQ1 ×2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#power-regulation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power Regulation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Power Regulation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#max17502fatbt" class="md-nav__link">
-    <span class="md-ellipsis">
-      MAX17502FATB+T
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usb-uart-interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      USB-UART Interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="USB-UART Interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cp2102-gmr" class="md-nav__link">
-    <span class="md-ellipsis">
-      CP2102-GMR
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#power-connectors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power &amp; Connectors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#indicators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Indicators
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gpio-expansion" class="md-nav__link">
-    <span class="md-ellipsis">
-      GPIO &amp; Expansion
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#protections" class="md-nav__link">
-    <span class="md-ellipsis">
-      Protections
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clock-signal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clock Signal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-components-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Components Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -618,12 +435,85 @@
   
   
     <li class="md-nav__item">
-      <a href="../development/" class="md-nav__link">
+      <a href="../x2_development/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mighty Mouse
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Mighty Mouse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mm_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
     
   </span>
   
@@ -658,8 +548,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -668,150 +556,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#microcontroller" class="md-nav__link">
+  <a href="#community-feedback" class="md-nav__link">
     <span class="md-ellipsis">
-      Microcontroller
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Microcontroller">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#atmega328p-pn" class="md-nav__link">
-    <span class="md-ellipsis">
-      ATmega328P-PN
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#motor-drivers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Motor Drivers
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Motor Drivers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#drv8245hqpwprq1-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      DRV8245HQPWPRQ1 ×2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#power-regulation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power Regulation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Power Regulation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#max17502fatbt" class="md-nav__link">
-    <span class="md-ellipsis">
-      MAX17502FATB+T
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usb-uart-interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      USB-UART Interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="USB-UART Interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cp2102-gmr" class="md-nav__link">
-    <span class="md-ellipsis">
-      CP2102-GMR
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#power-connectors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power &amp; Connectors
+      Community Feedback
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#indicators" class="md-nav__link">
+  <a href="#this-is-a-compilation-of-community-suggestion-and-our-planned-responses-this-list-will-be-added-to-as-we-continue-to-recieve-brilliant-suggestions-from-the-arduino-and-remote-controlled-communities" class="md-nav__link">
     <span class="md-ellipsis">
-      Indicators
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gpio-expansion" class="md-nav__link">
-    <span class="md-ellipsis">
-      GPIO &amp; Expansion
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#protections" class="md-nav__link">
-    <span class="md-ellipsis">
-      Protections
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clock-signal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clock Signal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-components-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Components Summary
+      This is a compilation of community suggestion and our planned responses. This list will be added to as we continue to recieve brilliant suggestions from the Arduino and Remote Controlled communities.
     </span>
   </a>
   
@@ -836,139 +592,26 @@
   
 
 
-<h1 id="escuino-x2-hardware-overview">ESCuino-X2 Hardware Overview<a class="headerlink" href="#escuino-x2-hardware-overview" title="Permanent link">&para;</a></h1>
-<p><strong>ESCuino-X2</strong> is a compact, dual brushed motor controller with an integrated ATmega328P microcontroller. Designed to be both Arduino-compatible and rugged enough for high-current applications, this board brings together essential embedded features for robotics, R/C vehicles, and DIY electronics.</p>
-<hr />
-<h2 id="microcontroller">Microcontroller<a class="headerlink" href="#microcontroller" title="Permanent link">&para;</a></h2>
-<h3 id="atmega328p-pn">ATmega328P-PN<a class="headerlink" href="#atmega328p-pn" title="Permanent link">&para;</a></h3>
+  <h1>X2 feedback</h1>
+
+<h2 id="community-feedback">Community Feedback<a class="headerlink" href="#community-feedback" title="Permanent link">&para;</a></h2>
+<h2 id="this-is-a-compilation-of-community-suggestion-and-our-planned-responses-this-list-will-be-added-to-as-we-continue-to-recieve-brilliant-suggestions-from-the-arduino-and-remote-controlled-communities">This is a compilation of community suggestion and our planned responses. This list will be added to as we continue to recieve brilliant suggestions from the Arduino and Remote Controlled communities.<a class="headerlink" href="#this-is-a-compilation-of-community-suggestion-and-our-planned-responses-this-list-will-be-added-to-as-we-continue-to-recieve-brilliant-suggestions-from-the-arduino-and-remote-controlled-communities" title="Permanent link">&para;</a></h2>
 <ul>
-<li>8-bit AVR MCU running at 16 MHz</li>
-<li>32 KB Flash / 2 KB SRAM / 1 KB EEPROM</li>
-<li>Arduino Uno R3 pinout and bootloader compatible</li>
-<li>Operates at 5V, with AVCC decoupled and filtered</li>
-<li>Exposes UART, SPI, I²C, PWM, and ADC pins on 0.1" headers</li>
+<li>Suggestion: Adding mounting holes in the same layout as the UNO R3<ul>
+<li>We are currently reviewing the component layout and trace routing to determine if this can be accomplished without a major re-design. If possible this will be added to the first production version of the development board. </li>
+</ul>
+</li>
+<li>Suggestion: Shield compatibility with UNO R3<ul>
+<li>Likely not possible without a considerable redesign for V1.0, however this will be added as a primary design parameter for V2.0</li>
+</ul>
+</li>
+<li>Suggestion: Adding I2C along with a quiic connector<ul>
+<li>This will certainly be a primary design parameter for V2.0, and potentially even added to the smaller non-dev version of the ESCuino. The ability to add multiple sensors and additional peripherals without the need for exposing a large number of IO would be a brilliant addition, and we are particularly excited about the possibilities this might open up once implemented.</li>
+</ul>
+</li>
 </ul>
 <hr />
-<h2 id="motor-drivers">Motor Drivers<a class="headerlink" href="#motor-drivers" title="Permanent link">&para;</a></h2>
-<h3 id="drv8245hqpwprq1-2">DRV8245HQPWPRQ1 ×2<a class="headerlink" href="#drv8245hqpwprq1-2" title="Permanent link">&para;</a></h3>
-<p>Two independent H-bridge motor drivers (one per motor):</p>
-<ul>
-<li>Supply voltage (VM): 4.5V – 37V</li>
-<li>Max continuous output current: <strong>6.5A RMS</strong></li>
-<li>Peak output current: up to 10–14A (depending on cooling and duty cycle)</li>
-<li>Integrated power FETs (no external FETs needed)</li>
-<li>Control: PH/EN or PWM/PWM modes</li>
-<li>Current sensing via IPROPI pin (proportional to output current)</li>
-<li>Built-in protections: overcurrent, undervoltage, thermal shutdown, short-circuit</li>
-</ul>
-<p><strong>Note:</strong> Each motor channel can safely sustain ~6.5A continuous with proper PCB heat dissipation. Higher peak currents are possible for brief durations.</p>
-<hr />
-<h2 id="power-regulation">Power Regulation<a class="headerlink" href="#power-regulation" title="Permanent link">&para;</a></h2>
-<h3 id="max17502fatbt">MAX17502FATB+T<a class="headerlink" href="#max17502fatbt" title="Permanent link">&para;</a></h3>
-<ul>
-<li>High-efficiency, synchronous step-down converter</li>
-<li>Input range: 4.5V to 60V</li>
-<li>Output: 5V regulated (used to power MCU and logic)</li>
-<li>Internal compensation and soft-start</li>
-<li>Integrated MOSFET, 500kHz switching frequency</li>
-</ul>
-<p><strong>Use case:</strong> Powers logic and USB devices from battery voltage.</p>
-<hr />
-<h2 id="usb-uart-interface">USB-UART Interface<a class="headerlink" href="#usb-uart-interface" title="Permanent link">&para;</a></h2>
-<h3 id="cp2102-gmr">CP2102-GMR<a class="headerlink" href="#cp2102-gmr" title="Permanent link">&para;</a></h3>
-<ul>
-<li>USB to UART bridge</li>
-<li>Full-speed USB 2.0</li>
-<li>Supports onboard serial flashing of the ATmega328P</li>
-<li>Works with Arduino IDE via standard USB CDC drivers</li>
-</ul>
-<p><strong>Connector:</strong> USB-C (HYCW445-USBC16-730B)</p>
-<hr />
-<h2 id="power-connectors">Power &amp; Connectors<a class="headerlink" href="#power-connectors" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Power input range (VIN):</strong> 4.5V – 35V</li>
-<li><strong>Input capacitors:</strong> 390μF bulk + 100nF ceramic decoupling</li>
-<li><strong>Connectors:</strong>  </li>
-<li>4.5V - 35V DC input via solder pads  </li>
-<li>Motor A and Motor B outputs via solder pads  </li>
-<li>USB-C for logic power and UART (cannot drive motors on USB-C Power)</li>
-</ul>
-<hr />
-<h2 id="indicators">Indicators<a class="headerlink" href="#indicators" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Power LED (Green)</li>
-<li>TX/RX LEDs (White) for USB serial activity</li>
-</ul>
-<hr />
-<h2 id="gpio-expansion">GPIO &amp; Expansion<a class="headerlink" href="#gpio-expansion" title="Permanent link">&para;</a></h2>
-<p>Exposed I/O on 2.54mm headers:</p>
-<table>
-<thead>
-<tr>
-<th>Header</th>
-<th>Function</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>P1</td>
-<td>Digital I/O (D2–D9)</td>
-</tr>
-<tr>
-<td>P2</td>
-<td>Analog I/O (A0–A5) + UART</td>
-</tr>
-<tr>
-<td>P3</td>
-<td>SPI, I²C, reset, and power lines</td>
-</tr>
-<tr>
-<td>H4</td>
-<td>Motor control pins (PH, EN, DRVOFF, IPROPI, NSLEEP) per driver</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="protections">Protections<a class="headerlink" href="#protections" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>TVS Diode (D3):</strong> SMAJ36A for transient voltage suppression on VIN</li>
-<li><strong>Input filtering:</strong> Several MLCCs and RC snubbers</li>
-<li><strong>USB ESD protection:</strong> TPD2EUSB30ADRTR for DP/DM lines</li>
-</ul>
-<hr />
-<h2 id="clock-signal">Clock Signal<a class="headerlink" href="#clock-signal" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>X1:</strong> 16 MHz crystal for ATmega328P with 22pF load capacitors</li>
-</ul>
-<hr />
-<h2 id="core-components-summary">Core Components Summary<a class="headerlink" href="#core-components-summary" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Part</th>
-<th>Function</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ATmega328P-PN</td>
-<td>MCU</td>
-</tr>
-<tr>
-<td>DRV8245HQPWPRQ1</td>
-<td>Motor Drivers</td>
-</tr>
-<tr>
-<td>MAX17502FATB+T</td>
-<td>5V Buck Regulator</td>
-</tr>
-<tr>
-<td>CP2102-GMR</td>
-<td>USB-UART Bridge</td>
-</tr>
-</tbody>
-</table>
-<hr />
+<p>We love hearing from the community about the applications and use cases they have in mind for this project! Do you have ideas for potential applications or feature suggestions? reach out to us on <a href="www.facebook.com/currendynamics">Facebook</a>! </p>
 <p>Designed in the Ozarks, USA. Built for the Frontier. </p>
 
 
