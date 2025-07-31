@@ -12,3 +12,11 @@ img.render-img {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+img.render-smooth {
+  width: 60%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}

@@ -6,9 +6,9 @@ We design everything from programmable motor controllers to Arduino-compatible d
 
 ---
 
-## 🚀 Featured Project  
+## 🚀 Featured Projects  
 ### ESCuino – Dual Brushed Motor ESC built for Arduino IDE 
-<img src="./assets/images/v1-render.png" alt="Render of ESCuino X2 Dev V1.0" class="render-img">
+<img src="./assets/images/v1-render.png" alt="Render of ESCuino X2 Dev V1.0" class="render-smooth">
 An open-source, user-programmable motor controller built for R/C vehicles, robotics, and more.
 
 ---
@@ -22,5 +22,15 @@ An open-source, user-programmable motor controller built for R/C vehicles, robot
 - [Contribute](https://github.com/orgs/Curren-Dynamics/repositories)
 
 ---
+
+### Mighty Mouse Pro Micro
+<img src="/assets/images/mm_pm_front_white.png" class="render-smooth" alt="Render of Micro Mouse Pro Micro">
+Drive motors with up to 35V and 32A (depending on thermal limitations) with the Arduino Pro Micro platform!
+
+---
+
+## 🧰 Start Here
+
+- [Overview](mm_overview.md)
 
 Designed in the Ozarks, USA. Built for the Frontier. 
