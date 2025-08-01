@@ -4,7 +4,7 @@ The Mighty Mouse project aims to provide a small, programmable and affordable ES
 
 <img src="/assets/images/mm_pm_front_white.png" class="render-smooth" alt="3D Render of Mighty Mouse Pro Micro">
 
-## Our primary goals for the board:
+## Primary goals for the board:
 
 - Roughly the same size and shape as Arduino Pro Micro
 - XT30 connector for battery input
@@ -12,7 +12,7 @@ The Mighty Mouse project aims to provide a small, programmable and affordable ES
 - Three pin header with standard servo |+|-|S| configuration
 - DRV8245 motor driver with solder pads to connect to a brushed motor 
 
-## Our secondary goals for the board:
+## Secondary goals for the board:
 
 - DRV8245 should be able to provide the Pro Micro with current sensing
 - The servo signal should support being programmed as an F.Port channel for serial communication with the radio reciever enabling multiple channel inputs and telemetry feedback from the Arduino 
