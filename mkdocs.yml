@@ -48,6 +48,7 @@ nav:
     - Development: x2_development.md
   - Mighty Mouse:
     - Overview: mm_overview.md
+    - Hardware: mm_hardware.md
 
 markdown_extensions:
   - admonition
