@@ -13,6 +13,8 @@
         <link rel="canonical" href="https://curren-dynamics.com/mm_firmware/">
       
       
+        <link rel="prev" href="../mm_hardware/">
+      
       
       
       <link rel="icon" href="../assets/logos/logo_only.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Mm firmware - Wiki</title>
+        <title>Firmware - Wiki</title>
       
     
     
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-aim-of-this-page-is-to-provide-the-user-with-the-inputs-the-drv8245-motor-driver-requires-for-functionality-as-well-as-code-for-a-typical-usecase-scenario-that-users-can-then-modify-as-needed-to-fit-their-needs-this-information-may-be-applicable-to-people-using-other-platforms-to-interface-with-drv82xx-series-automotive-grade-brushed-motor-driver-ics" class="md-skip">
+        <a href="#firmware" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Mm firmware
+              Firmware
             
           </span>
         </div>
@@ -257,10 +259,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../mm_overview/" class="md-tabs__link">
           
   
@@ -462,26 +466,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -494,7 +503,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Mighty Mouse
@@ -547,6 +556,39 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -571,23 +613,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-aim-of-this-page-is-to-provide-the-user-with-the-inputs-the-drv8245-motor-driver-requires-for-functionality-as-well-as-code-for-a-typical-usecase-scenario-that-users-can-then-modify-as-needed-to-fit-their-needs-this-information-may-be-applicable-to-people-using-other-platforms-to-interface-with-drv82xx-series-automotive-grade-brushed-motor-driver-ics" class="md-nav__link">
-    <span class="md-ellipsis">
-      The aim of this page is to provide the user with the inputs the DRV8245 motor driver requires for functionality as well as code for a typical usecase scenario that users can then modify as needed to fit their needs. This information may be applicable to people using other platforms to interface with DRV82xx series automotive grade brushed motor driver IC's.
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -606,9 +633,10 @@
   
 
 
-  <h1>Mm firmware</h1>
-
-<h2 id="the-aim-of-this-page-is-to-provide-the-user-with-the-inputs-the-drv8245-motor-driver-requires-for-functionality-as-well-as-code-for-a-typical-usecase-scenario-that-users-can-then-modify-as-needed-to-fit-their-needs-this-information-may-be-applicable-to-people-using-other-platforms-to-interface-with-drv82xx-series-automotive-grade-brushed-motor-driver-ics">The aim of this page is to provide the user with the inputs the DRV8245 motor driver requires for functionality as well as code for a typical usecase scenario that users can then modify as needed to fit their needs. This information may be applicable to people using other platforms to interface with DRV82xx series automotive grade brushed motor driver IC's.<a class="headerlink" href="#the-aim-of-this-page-is-to-provide-the-user-with-the-inputs-the-drv8245-motor-driver-requires-for-functionality-as-well-as-code-for-a-typical-usecase-scenario-that-users-can-then-modify-as-needed-to-fit-their-needs-this-information-may-be-applicable-to-people-using-other-platforms-to-interface-with-drv82xx-series-automotive-grade-brushed-motor-driver-ics" title="Permanent link">&para;</a></h2>
+<h1 id="firmware">Firmware<a class="headerlink" href="#firmware" title="Permanent link">&para;</a></h1>
+<p><img src="/assets/images/mm/logo.png" class="page-logo" alt="Mighty Mouse Logo"></p>
+<p>This page aims to document the functions of the Mighty Mouse firmware as well as the requirements of the DRV8245 motor driver for proper function, enabling users to build on or modify the code as desired. Since the Mighty Mouse firmware is still in development and some of these features / options are not yet implemented, I will simply document what I can and update this page as the firmware is further developed. </p>
+<hr />
 <p>To start, we should understand the I/O of the chip we're working with. The DRV8245 is designed for automotive and industrial applications and as such has more features and associated I/O than the typical motor drivers used in R/C ESC's. The Mighty Mouse project uses the HW variant of the driver in the HTSSOP package and its pinout is as follows:</p>
 <table>
 <thead>
@@ -651,7 +679,7 @@
 </tr>
 <tr>
 <td>25</td>
-<td>iPROPI</td>
+<td>IPROPI</td>
 <td>Current sense output</td>
 </tr>
 <tr>
@@ -671,7 +699,7 @@
 </tr>
 </tbody>
 </table>
-<p>This table leaves out the main voltage input, ground, and load outputs as they are statically configured. </p>
+<p>This table leaves out the main voltage input, ground, and load outputs as they are not pertinent to the coding of the device. Also, a number of the I/O listed above are configured with a LVL1of6 or LVL1of3 (as Texas Instruments would call it) hardware configuration, essentially configuring the setting with a resistance level corresponding to the desired level as listed in the datasheet for the motor driver. The DIAG, MODE, and SR pins are statically conffigured as LVL1, e.g. tied to ground. At this time the settings for ITRIP and IPROPI are still being determined via testing with the development boards. </p>
 
 
 
