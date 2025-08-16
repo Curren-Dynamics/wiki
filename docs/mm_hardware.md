@@ -1,4 +1,4 @@
-# Mighty Mouse — Hardware Specifications
+# Hardware Specifications
 
 <img src="/assets/images/mm/logo.png" class="page-logo" alt="Mighty Mouse Logo">
 
