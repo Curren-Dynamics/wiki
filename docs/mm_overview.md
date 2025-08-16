@@ -1,3 +1,5 @@
+<img src="/assets/images/mm/logo.png" class="page-logo" alt="Mighty Mouse Logo">
+
 The Mighty Mouse project aims to provide a small, programmable and affordable ESC shield for the Arduino Pro Micro platform.
 
 ---
@@ -20,7 +22,9 @@ The Mighty Mouse project aims to provide a small, programmable and affordable ES
 
 ---
 
-This project is currently in the prototyping and testing stage. Currently awaiting delivery of the Mighty Mouse development board V1.0.2 which we will use for testing various settings and configurations that are typically hardware configured on the DRV8245, as well as firmware for the Arduino Pro Micro. Once the functionality we desire from the DRV8245 has been accomplished with the Dev 1.0.2, then we will finalize trace routing and begin manufacture of the first protoypes of the Mighty Mouse Pro Mico.
+### Current Progress
+
+This project is currently in the prototyping and testing stage. The development boards have been assembled and are undergoing testing in various configurations to determine the exact trace routing and hardware configurations that need to be implemented in the production version of the Mighty Mouse. The board has been tested up to 28V and has produced impressive results for it's tiny size, powering motors as large as a 21T 550 Motor (Traxxas Titan) without overheating! Early versions of the Mighty Mouse firmware are being developed on this board alongside the hardware testing, you can read more on the [firmware page](mm_firmware.md)!
 
 ---
 <div align="center">

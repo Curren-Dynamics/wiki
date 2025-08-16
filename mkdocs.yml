@@ -49,6 +49,7 @@ nav:
   - Mighty Mouse:
     - Overview: mm_overview.md
     - Hardware: mm_hardware.md
+    - Firmware: mm_firmware.md
 
 markdown_extensions:
   - admonition
